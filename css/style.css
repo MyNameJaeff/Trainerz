@@ -1,3 +1,14 @@
 body{
     background-color: lightblue;
 }
+.clickableImage{
+    padding: 0%;
+    border: 0;
+    width: 50%;
+}
+.clickableImage, .theClickableImage{
+    border-radius: 5%;
+}
+.theClickableImage{
+    width: 100%;
+}

@@ -1,3 +1,8 @@
+const listOfVideos = [];
 function test(){
-    document.getElementById("title").innerHTML = "Works!";
+    document.getElementById("title").innerHTML = "clicked";
+}
+function addToList(element){
+    listOfVideos.push(element);
+    console.log(listOfVideos);
 }
