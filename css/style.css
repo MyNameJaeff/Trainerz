@@ -4,11 +4,18 @@ body{
 .clickableImage{
     padding: 0%;
     border: 0;
-    width: 50%;
+    width: 100%;
 }
 .clickableImage, .theClickableImage{
     border-radius: 5%;
 }
 .theClickableImage{
     width: 100%;
+}
+.mediaBox{
+    width: 25%;
+}
+video{
+    width: 100%;
+    z-index: 1 !important;
 }

@@ -13,7 +13,7 @@
     $fileCounter = 0;
     $imageFiles = glob('./images/*.*', GLOB_BRACE);
     foreach($imageFiles as $file){
-        echo "<div id='div$file'>";
+        echo "<div id='div$file' class='mediaBox'>";
         $fileType = pathinfo($file, PATHINFO_EXTENSION);
         ?>
         <button class='clickableImage' id="<?php echo $file ?>">
