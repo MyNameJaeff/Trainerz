@@ -13,11 +13,15 @@
     $fileCounter = 0;
     $imageFiles = glob('./images/*.*', GLOB_BRACE);
     foreach($imageFiles as $file){
-        $fileType = explode('.', $file); //Dålig
-        $fileType = end($fileType);
-        echo("<button onclick='test()' class='clickableImage'>");
-            echo("<image src='$file' alt='image' border='0%' class='theClickableImage'");
-        echo("</button>");
+        echo "<div id='div$file'>";
+        $fileType = pathinfo($file, PATHINFO_EXTENSION);
+        ?>
+        <button class='clickableImage' id="<?php echo $file ?>">
+            <image src="<?php echo $file; ?>" alt='image' border='0%' class='theClickableImage'>
+        </button>
+        </div>
+        <?php
+        $fileCounter++;
     }
     $videoFiles = glob('./videos/*.*', GLOB_BRACE);
     /*foreach($videoFiles as $file){
@@ -29,10 +33,9 @@
     }*/
     ?>
     </div>
-    <div class="div1">
+    <div class="divided">
         <h1 id="title">Title</h1>
-        <button onclick="test()">Press</button>
     </div>
-    <script src="./script.js"></script>
+    <script src="./script.js" defer></script>
 </body>
 </html>
