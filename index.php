@@ -8,6 +8,9 @@
     <title>Trainerz</title>
 </head>
 <body>
+    <div class="videoPlayingBox" id="videoPlayingBox">
+        <video src="" id="playVideoHere">
+    </div>
     <div>
     <?php
     $fileCounter = 0;
@@ -16,25 +19,14 @@
         echo "<div id='div$file' class='mediaBox'>";
         $fileType = pathinfo($file, PATHINFO_EXTENSION);
         ?>
-        <button class='clickableImage' id="<?php echo $file ?>">
+        <button class='clickableImage' id="button<?php echo $file ?>">
             <image src="<?php echo $file; ?>" alt='image' border='0%' class='theClickableImage'>
         </button>
         </div>
         <?php
         $fileCounter++;
     }
-    $videoFiles = glob('./videos/*.*', GLOB_BRACE);
-    /*foreach($videoFiles as $file){
-        $fileType = explode('.', $file); //Dålig
-        $fileType = end($fileType);
-        echo("<video width='320' heigt='240' poster='./images/trainerz_logo.jpg' controls>"); //Försöka ta bort controls
-        echo("<source src='$file' type='video/$fileType'");
-        echo("</video>");
-    }*/
     ?>
-    </div>
-    <div class="divided">
-        <h1 id="title">Title</h1>
     </div>
     <script src="./script.js" defer></script>
 </body>
