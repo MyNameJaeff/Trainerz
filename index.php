@@ -9,7 +9,9 @@
 </head>
 <body>
     <div class="videoPlayingBox" id="videoPlayingBox">
-        <video src="" id="playVideoHere">
+        <div class="specialBox" id="specialBox">
+            <video src="" id="playVideoHere" class="playVideoHere" controls autoplay>
+        </div>
     </div>
     <div>
     <?php

@@ -12,6 +12,13 @@ body{
     top: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.603);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.playVideoHere{
+    width: 100%;
+    z-index: 1 !important;
 }
 .clickableImage{
     padding: 0%;
