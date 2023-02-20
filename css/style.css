@@ -17,7 +17,7 @@ body{
     align-items: center;
 }
 .playVideoHere{
-    width: 100%;
+    width: 70%;
     z-index: 1 !important;
 }
 .clickableImage{
